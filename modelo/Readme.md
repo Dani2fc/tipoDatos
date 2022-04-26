@@ -27,3 +27,15 @@
 ## Referenciados
 * Almacenan las referencias de los datos.
 * Estos se almacenan en una memoria llamada heap.
+* Accsesible desde otras instancias de clase.
+* Su ciclo de vida termina cuando no se necesita más.
+* Mientras exista al menos una referencia activa en la zona de datos esta se mantendrá.
+* Tan pronto como no haya más referencias la zona se considera inutilizada y se procede a su destrucción por parte del carbage collector.
+* Un tipo referenciado puede no referenciar nada -> null.
+* El operador "new" es para instanciación de una clase, es decir, reserva una dirección de área de memoria.
+
+## Variable de referencia
+* Caracteriza una instancia de clase, es decir, la dirección donde está el objeto.
+* Contiene la dirección de un objeto cuyo valor por defecto es null.
+* Durante una prueba de igualdad entre dos variables por referencia, son las direcciones de los objetos lo que se conmparan y no el contenido de los objetos en si mismos.
+* Cuando se una referencia como argumento de un método es la dirección del objeto la que se pasa, y no el objeto en si mismo.
